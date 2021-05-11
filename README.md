@@ -44,3 +44,11 @@ lookup.
 
 Ultimately, I'd like to make a super-powered version of the units unix
 program.
+
+## related links
+
+* https://github.com/oisdk/agda-ring-solver
+* https://github.com/nadia-polikarpova/cse291-program-synthesis
+* https://people.csail.mit.edu/asolar/SynthesisCourse/index.htm
+* https://drops.dagstuhl.de/opus/volltexte/2020/11959/pdf/OASIcs-PLATEAU-2019-5.pdf
+

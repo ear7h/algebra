@@ -34,6 +34,10 @@ Just
 	]
 ```
 
+## bugs
+
+* `=*=` can't handle multiple occurences of the same variable
+
 ## intent
 
 My intent with this library is to realize a program I wish I had when I
@@ -45,7 +49,22 @@ lookup.
 Ultimately, I'd like to make a super-powered version of the units unix
 program.
 
-## related links
+
+
+## research
+
+* wolfram alpha offers similar functionality, though less flexible, private,
+	or modular since it's closed source and access is provided only through a
+	web interface. It also is incapable of solving across multiple formulas.
+* [egraphs](https://egraphs-good.github.io/) might be a better/faster
+	representation for this. Also, using rust allows better modularity:
+	a server-less (like actually lacking servers) algebra solver with wasm,
+	easier access from existing gui libraries, etc. One possible drawback,
+	I need to read more about egraphs, is that haskell is automatically lazy,
+	so synthesizing new representations doesn't use that much memory.
+	In particular, there is always more data (lazylily) sitting in the queue
+	than has been processed (for each processed item, there can be as many
+	new items as there are rewrite rules).
 
 * https://github.com/oisdk/agda-ring-solver
 * https://github.com/nadia-polikarpova/cse291-program-synthesis
